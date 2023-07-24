@@ -1,0 +1,691 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html {
+    overflow-x: hidden;
+    font-size: 10px;
+}
+
+.header {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    background-image: url('./logo.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.menu {
+    width: 70%;
+    display: flex;
+    justify-content: space-evenly;
+    font-family: sans-serif;
+    font-size: 2rem;
+    position: relative;
+    top: 20px;
+}
+
+.item>p {
+    border-bottom: solid 0px black;
+    transition: 300ms;
+}
+
+.item:hover>p {
+    border-bottom: solid 5px black;
+}
+
+.dropdown {
+    background: white;
+    position: absolute;
+    top: 5vh;
+    display: none;
+}
+
+.dropdown p:hover {
+    text-decoration: underline;
+}
+
+.item:hover .dropdown {
+    display: block;
+}
+
+.myButton {
+    width: 130px;
+    height: 45px;
+    color: white;
+    font-size: 20px;
+    background: rgb(64, 93, 255);
+    border: none;
+    border-radius: 8px;
+    position: relative;
+    top: -10px;
+    cursor: pointer;
+    transition: 200ms;
+}
+
+.myButton:hover {
+    top: -15px;
+}
+
+.menu_icon {
+    display: none;
+}
+
+.dropdown1 .flex {
+    display: flex;
+    justify-content: center;
+    border: solid 1px black;
+    height: 400px;
+}
+
+.prod {
+    width: 200px;
+    border: solid 1px black;
+}
+
+.dropdown1 img {
+    width: 80%;
+    height: 80px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.dropdown1 p {
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.weak {
+    color: grey;
+    font-size: 13px;
+}
+
+.dropdown2 {
+    width: 180px;
+    height: 200px;
+    border: solid 3px black;
+    justify-content: center;
+    align-items: center;
+}
+
+.dropdown2 p {
+    font-size: 20px;
+    padding: 20px;
+}
+
+.item2:hover>.dropdown {
+    display: flex;
+}
+
+.dropdown4 .flex {
+    width: 700px;
+    height: 250px;
+    display: flex;
+    margin-left: -250px;
+}
+
+.com img {
+    width: 200px;
+    height: 150px;
+}
+
+.coms2 {
+    background: white;
+    border: solid 2px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.com3 {
+    border: solid 2px black;
+    border-left: none;
+    width: 300px;
+}
+
+.com3 p {
+    padding: 12px;
+}
+
+.com:hover .first_p {
+    text-decoration: underline;
+}
+
+.dropdown5 {
+    width: 150px;
+    height: 200px;
+    border: solid 3px black;
+    justify-content: center;
+    align-items: center;
+}
+
+.dropdown5 p {
+    font-size: 20px;
+    padding: 10px;
+}
+
+.item5:hover>.dropdown {
+    display: flex;
+}
+
+.figma_video {
+    display: block;
+    width: 70%;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.subtext {
+    width: 45%;
+    text-align: center;
+    font-weight: lighter;
+    font-size: 2rem;
+    margin: auto;
+}
+
+.button2 {
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+    background: rgb(63, 43, 255);
+    cursor: pointer;
+    z-index: 10;
+}
+
+.figma-esiminch {
+    position: relative;
+    margin: 150px auto;
+    width: 1440px;
+    z-index: -1;
+}
+
+.figma-esiminch img {
+    display: block;
+    width: 140%;
+    height: auto;
+    max-width: none;
+    margin-right: 96px;
+    margin-left: -45%;
+}
+
+.figma-esiminch video {
+    width: 40%;
+    height: auto;
+    position: absolute;
+    top: -150px;
+    margin-left: 40%;
+}
+
+.title {
+    font-size: 4rem;
+    width: 50%;
+    text-align: center;
+    margin: auto;
+}
+
+.subtext2 {
+    font-size: 2rem;
+    margin-top: 30px;
+    width: 45%;
+}
+
+.fix_jam {
+    width: 70%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.fix_jam h1 {
+    font-weight: bold;
+    width: 350px;
+    font-size: 3rem;
+}
+
+.fix_jam p {
+    font-size: 1.8rem;
+    font-weight: lighter;
+    width: 300px;
+    margin-top: 20px;
+}
+
+.fix_jam button {
+    width: 170px;
+    height: 45px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    background: black;
+    border: none;
+    border-radius: 8px;
+    position: relative;
+    top: 30px;
+    cursor: pointer;
+    transition: 300ms;
+}
+
+.fix_jam button:hover {
+    margin-top: -5px;
+}
+
+.fix_jam .first_div {
+    position: relative;
+    top: 80px;
+}
+
+
+.fix_jam .second_div {
+    width: 90%;
+    height: auto;
+    position: relative;
+    left: 200px;
+    z-index: -1;
+}
+
+.design .second_div {
+    left: 100px;
+}
+
+.bring .second_div {
+    left: -100px;
+}
+
+.build .first_div {
+    position: relative;
+    top: 200px;
+}
+
+.build img {
+    position: relative;
+    top: -500px;
+    width: 0;
+    animation: fade 2s 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fade {
+    100% {
+        width: 175px;
+    }
+}
+
+.citat {
+    height: 50vh;
+    background: rgb(255, 204, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.citat div {
+    width: 80%;
+}
+
+.citat h1 {
+    font-size: 3rem;
+}
+
+.citat p {
+    font-size: 2rem;
+    margin-top: 30px;
+}
+
+.sub3 {
+    margin-top: 80px;
+}
+
+a {
+    color: black;
+}
+
+.icons {
+    width: 70%;
+    margin: 55px auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.join_community {
+    height: 210vh;
+    margin-top: 70px;
+    background: black;
+    color: white;
+}
+
+.join_community .title {
+    position: relative;
+    top: 50px;
+    font-size: 4rem;
+}
+
+.join_community .subtext {
+    position: relative;
+    top: 100px;
+}
+
+.work {
+    width: 100%;
+    margin-top: 150px;
+}
+
+.work h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-left: 60px;
+}
+
+.work>p {
+    color: orange;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: 60px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.image {
+    width: 100%;
+    height: 220px;
+    border-radius: 15px;
+}
+
+.file {
+    width: 25%;
+    cursor: pointer;
+}
+
+.creator {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+.creator>div {
+    display: flex;
+    justify-content: center;
+}
+
+.creator>div>.icon {
+    width: 25%;
+    border-radius: 100%;
+}
+
+.creator>div>span {
+    font-size: 1.6rem;
+    position: relative;
+    top: 5px;
+    left: 10px;
+    font-weight: bold;
+    color: rgb(178, 178, 178);
+}
+
+.creator>p {
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: rgb(178, 178, 178);
+}
+
+.plugin {
+    width: 25%;
+    height: 90px;
+    border-radius: 10px;
+    transition: 500ms;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    cursor: pointer;
+}
+
+.plugin>div {
+    width: 70%;
+}
+
+.plugin img {
+    width: 60px;
+    height: 60px;
+}
+
+.plugin p {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: rgb(185, 185, 185);
+}
+
+.plugin h2 {
+    font-size: 2.3rem;
+    font-weight: bold;
+}
+
+.plugin:hover {
+    background: rgba(46, 46, 46, 0.641);
+    box-shadow: 0px 0px 5px white;
+}
+
+.join_community>button {
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+    width: 25%;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 300ms;
+}
+
+.join_community>button:hover {
+    margin-top: 45px;
+}
+
+.contact {
+    display: block;
+    margin: auto;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.contact .title {
+    font-size: 3.3rem;
+}
+
+.contact svg {
+    width: 15px;
+    height: 15px;
+}
+
+.input {
+    display: block;
+    margin: auto;
+    width: 350px;
+    height: 50px;
+    background: transparent;
+    border: solid 3px black;
+    border-radius: 6px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-top: 50px;
+    cursor: pointer;
+    text-align: center;
+}
+
+form>.input {
+    margin-top: 20px;
+    cursor: text;
+}
+
+.submit {
+    width: 350px;
+    height: 50px;
+    color: white;
+    font-size: 20px;
+    background: black;
+    border: none;
+    border-radius: 6px;
+    position: relative;
+    top: 30px;
+    cursor: pointer;
+    transition: 300ms;
+}
+
+.submit:hover {
+    top: 20px;
+}
+
+.contact>p {
+    font-size: 1.8rem;
+    margin-top: 30px;
+}
+
+.contact .privacy {
+    width: 350px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.contact .privacy p {
+    font-size: 1.3rem;
+}
+
+.contact .privacy h3 {
+    font-size: 1.8rem;
+    font-weight: lighter;
+    margin-top: 10px;
+}
+
+.contact .privacy a {
+    color: rgb(0, 89, 255);
+    cursor: pointer;
+}
+
+.contact .privacy a:hover {
+    text-decoration: underline;
+}
+
+
+
+@media screen and (max-width: 350px) {
+    html {
+        font-size: 7px;
+    }
+
+    .menu {
+        display: none;
+    }
+    .button1{
+      display: none;
+    }
+    .menu_icon {
+        display: block;
+    }
+
+    .title {
+        width: 90%;
+    }
+
+    .subtext {
+        width: 90%;
+    }
+
+    .figma-esiminch {
+        width: 320px;
+    }
+
+    .figma-esiminch video {
+        top: -35px;
+    }
+
+    .fix_jam {
+        flex-direction: column;
+    }
+    .jam1{
+        margin-top: -100px;
+    }
+    .fix_jam .second_div {
+        margin: 0px 0px;
+        left: 0px;
+        position: static;
+    }
+    .fix_jam .first_div {
+        margin: 0px 0px;
+        left: 0px;
+        position: relative;
+        top: 300px;
+    }
+    .bring .first_div{
+       top: 10px;
+    }
+    .bring{
+        margin-top: 200px;
+    }
+    .havay{
+        display: none;
+    }
+    .fix_jam p {
+        margin-left: -30px;
+    }
+    .citat{
+        height: 60vh;
+        margin-top: 200px;
+    }
+    .citat div>h1{
+        width: 95%;
+    }
+    .icons{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .icons img{
+        width: 50px;
+        height: 50px;
+    }
+    .join_community{
+        height: 450vh;
+    }
+    .work h1,p{
+        margin-left: 20px;
+    }
+    .row{
+        flex-direction: column;
+        align-items: center;
+    }
+    .file{
+        width: 90%;
+        margin-top: 30px;
+    }
+    .file img{
+        height: 90%;
+    }
+    .plugin{
+        width: 90%;
+    }
+    .join_community>button{
+        width: 80%;
+    }
+    .contact .input{
+        width: 80%;
+    }
+    .contact .submit{
+        width: 80%;
+    }
+}
